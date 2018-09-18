@@ -20,8 +20,8 @@ export default class ResizeSquare extends Component {
             <div> 
                 <ResizableBox 
                     className="box" 
-                    width={200} 
-                    height={200} 
+                    width={this.state.width} 
+                    height={this.state.height} 
                     axis="both"
                     minConstraints={[100, 100]} 
                     maxConstraints={[500, 500]}
