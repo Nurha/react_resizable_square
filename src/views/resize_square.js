@@ -6,8 +6,8 @@ export default class ResizeSquare extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            width: 200,
-            height: 200,
+            width: 100,
+            height: 100,
         }
     }
 
@@ -16,19 +16,21 @@ export default class ResizeSquare extends Component {
     };
 
     render () {
-        return (
-            <div> 
-                <ResizableBox 
-                    className="box" 
-                    width={this.state.width} 
-                    height={this.state.height} 
-                    axis="both"
-                    minConstraints={[100, 100]} 
-                    maxConstraints={[500, 500]}
-                >
-                    <span className="text">Resizable ("both" axis).</span>
-                </ResizableBox>
-            </div>
+        return ( 
+            <ResizableBox 
+                className="box" 
+                width={this.state.width} 
+                height={this.state.height} 
+                axis="both"
+                minConstraints={[100, 100]} 
+                maxConstraints={[400, 400]}
+            >
+                
+            <span>
+                Happy Strong Fun Lucky Clever
+            </span>
+                
+            </ResizableBox>
         )
     }
 }
